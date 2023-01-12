@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { AppContext } from '../index';
+import { IndexContext } from '../index';
 import { authRoutes, publicRoutes } from '../routes';
 
 const AppRouter = () => {
-  const { user } = useContext(AppContext);
-  console.log(user);
+  const { user } = useContext(IndexContext);
 
   return (
     <Routes>

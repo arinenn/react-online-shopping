@@ -16,7 +16,7 @@ export default class UserStorage {
     this._isAuth = bool;
   }
   set user(obj) {
-    this._user = { ...obj };
+    this._user = obj;
   }
 
   setIsAuth(bool) {
