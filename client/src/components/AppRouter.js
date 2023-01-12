@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import { AppContext } from '../index';
 import { authRoutes, publicRoutes } from '../routes';
 
 const AppRouter = () => {
-  const isAuth = true; // mock variable -> will store it in mobx storage
+  const { user } = useContext(AppContext);
+  console.log(user);
 
   return (
     <Routes>
-      {isAuth &&
+      {user.isAuth &&
         authRoutes.map(({ path, Component }) => (
           <Route key={path} path={path} element={<Component />} />
         ))}
