@@ -1,9 +1,6 @@
 import { useContext } from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
+import { Navbar, Nav, Button, Container } from 'react-bootstrap';
 import { observer } from 'mobx-react-lite';
 
 import { IndexContext } from '../index';
@@ -18,18 +15,18 @@ const NavBar = observer(() => {
           SuperShop
         </NavLink>
         {user.isAuth ? (
-          <Nav className="ml-auto" style={{ color: 'white' }}>
+          <Nav style={{ color: 'white' }}>
             <Button variant="outline-light">Admin</Button>
             <Button
               variant="outline-light"
-              className="ml-2"
+              className="ms-3"
               onClick={() => user.setIsAuth(false)}
             >
               Log Out
             </Button>
           </Nav>
         ) : (
-          <Nav className="ml-auto" style={{ color: 'white' }}>
+          <Nav style={{ color: 'white' }}>
             <Button
               variant="outline-light"
               onClick={() => user.setIsAuth(true)}
