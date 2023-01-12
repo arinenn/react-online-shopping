@@ -4,5 +4,8 @@
 
 Learning efficient structure of a project.
 
-_Client_: axios, mobx, mobx-react-lite, react-bootstrap, bootstrap.
-_Server_: **not stated**.
+_Client_
+> axios, mobx, mobx-react-lite, react-bootstrap, bootstrap.
+
+_Server_
+> **not stated**.
