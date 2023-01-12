@@ -1,8 +1,8 @@
-import Admin from './pages/AdminPage';
-import Auth from './pages/AuthPage';
-import Basket from './pages/BasketPage';
+import AdminPage from './pages/AdminPage';
+import AuthPage from './pages/AuthPage';
+import BasketPage from './pages/BasketPage';
 import DevicePage from './pages/DevicePage';
-import Shop from './pages/ShopPage';
+import ShopPage from './pages/ShopPage';
 import {
   ADMIN_ROUTE,
   BASKET_ROUTE,
@@ -15,26 +15,26 @@ import {
 export const authRoutes = [
   {
     path: ADMIN_ROUTE,
-    Component: Admin,
+    Component: AdminPage,
   },
   {
     path: BASKET_ROUTE,
-    Component: Basket,
+    Component: BasketPage,
   },
 ];
 
 export const publicRoutes = [
   {
     path: SHOP_ROUTE,
-    Component: Shop,
+    Component: ShopPage,
   },
   {
     path: LOGIN_ROUTE,
-    Component: Auth,
+    Component: AuthPage,
   },
   {
     path: REGISTRATION_ROUTE,
-    Component: Auth,
+    Component: AuthPage,
   },
   {
     path: DEVICE_ROUTE + '/:id',

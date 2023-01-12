@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 
 import { LOGIN_ROUTE, REGISTRATION_ROUTE } from '../utilities/consts';
 
-const Auth = () => {
+const AuthPage = () => {
   const location = useLocation();
   const isLogin = location.pathname === LOGIN_ROUTE;
 
@@ -23,7 +23,7 @@ const Auth = () => {
             type="password"
             placeholder="Password"
           />
-          <Form className="d-flex justify-content-between mt-3">
+          <Container className="d-flex justify-content-between mt-3 p-0">
             {isLogin ? (
               <div>
                 No account?{' '}
@@ -38,11 +38,11 @@ const Auth = () => {
             <Button variant="outline-success">
               {isLogin ? 'Log In' : 'Register'}
             </Button>
-          </Form>
+          </Container>
         </Form>
       </Card>
     </Container>
   );
 };
 
-export default Auth;
+export default AuthPage;

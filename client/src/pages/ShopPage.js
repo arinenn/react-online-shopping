@@ -3,7 +3,7 @@ import TypeBar from '../components/TypeBar';
 import BrandBar from '../components/BrandBar';
 import DeviceList from '../components/DeviceList';
 
-const Shop = () => {
+const ShopPage = () => {
   return (
     <Container>
       <Row className="mt-4">
@@ -19,4 +19,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default ShopPage;

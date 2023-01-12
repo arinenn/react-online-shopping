@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Basket = () => {
+const BasketPage = () => {
   return <div>Basket</div>;
 };
 
-export default Basket;
+export default BasketPage;
